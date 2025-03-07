@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Surpresa para você!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #d8fde1;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #dd2930;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #ff0066;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #cc0052;
+        }
+        .foto {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+        }
+        #mensagemOculta {
+            display: none;
+            font-size: 24px;
+            color: #ff0066;
+            margin-top: 30px;
+        }
+        #snoopy {
+            width: 30%;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function mostrarFotos() {
+            // Mostrar fotos
+            document.getElementById("foto1").style.display = "inline-block";
+            document.getElementById("foto2").style.display = "inline-block";
+            document.getElementById("foto3").style.display = "inline-block";
+            // Mostrar mensagem
+            document.getElementById("mensagemOculta").style.display = "block";
+            // Esconder botão
+            document.getElementById("botao").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h1>Feliz 1 mês, meu amor! <3</h1>
+
+    <img id="snoopy" src="snoopy.png" alt="Snoopy" />
+
+    <p>clique aqui para matar a saudade</p>
+    <button id="botao" onclick="mostrarFotos()">Clique aqui</button>
+
+    <img id="foto1" class="foto" src="foto1.jpg" alt="Foto 1" style="display:none;">
+    <img id="foto2" class="foto" src="foto2.jpg" alt="Foto 2" style="display:none;">
+    <img id="foto3" class="foto" src="foto3.jpg" alt="Foto 3" style="display:none;">
+    
+    <p id="mensagemOculta">te amo muito!!</p>
+</body>
+</html>
+
+
